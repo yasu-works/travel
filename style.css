@@ -1,0 +1,287 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+  }
+  body {
+    color: #333;
+    font-size: 1rem;
+    font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+  }
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+  img {
+    max-width: 100%;
+  }
+  li {
+    list-style: none;
+  }
+
+/* コンテンツの幅を調整するための共通クラス */
+.wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 16px;
+}
+
+.readmore {
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+/* headerのスタイルシート */
+#header {
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    z-index: 10;
+}
+
+#header .site-title {
+    padding: 20px 16px;
+    line-height: 1px;
+}
+
+#navi {
+    background-color: #333;
+}
+
+#navi ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#navi li {
+    font-size: 0.875rem;
+    padding: 10px 60px 10px 0;
+}
+
+#navi ul li a{
+    color: #fff;
+}
+
+/* pickupのスタイルシート */
+#pickup {
+    padding-top: 150px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#pickup article {
+    width: 32%;
+} 
+
+#pickup .article-title {
+    font-size: 1rem;
+    margin: 10px 0 15px 0;
+}
+
+.readmore a {
+    color: #333;
+}
+
+/* containerのスタイルシート */
+#container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+main article {
+    margin-bottom: 80px;
+}
+
+main {
+    width: 65%;
+}
+
+main .article-title {
+    font-size: 1.5rem;
+    margin: 10px 0 15px 0;
+}
+
+main li {
+    margin-right: 20px;
+    font-size: 0.875rem;
+}
+
+main .text {
+    padding: 10px 40px 30px 40px;
+}
+
+.meta {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+#sidebar {
+    width: 33%;
+    padding: 20px;
+}
+
+/* authorのスタイルシート */
+.author {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.author img {
+    width: 130px;
+    height: 130px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+}
+
+.author .side-title {
+    font-size: 1.125rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.author .profile {
+    font-size: 0.875rem;
+    text-align: left;
+}
+
+/* rankingのスタイルシート */
+.ranking {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.ranking .side-title {
+    margin-bottom: 30px;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.ranking article {
+    margin-bottom: 30px;
+}
+
+.ranking article .article-title {
+    text-align: left;
+    font-size: 0.875rem;
+    font-weight: normal;
+}
+
+/* archiveのスタイルシート */
+.archive {
+    text-align: center;
+    margin-bottom:60px;
+}
+
+.archive .side-title {
+    margin-bottom: 30px;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.archive li {
+    padding: 20px;
+    border-top: solid 1px #777;
+    text-align: left;
+    font-size: 0.875rem;
+}
+
+.archive ul {
+    border-bottom: solid 1px #777;
+}
+
+/* footerのスタイルシート */
+#footer {
+    background-color: #f7f7f7;
+    font-size: 0.875rem;
+}
+
+footer .content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer .item {
+    width: 30%;
+}
+
+#footer .item .footer-title {
+    font-size: 1.125rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+#footer .about-list {
+    margin: 20px 0;
+}
+
+#footer .about-list li {
+    margin-bottom: 5px;
+}
+
+#footer .menu-list li {
+    padding: 15px;
+    text-align: left;
+    border-top: solid 1px #777;
+}
+
+#footer .menu-list {
+    border-bottom: solid 1px #777;
+}
+
+#footer .copyright {
+    text-align: center;
+    font-size: 0.750rem;
+    padding: 10px 0;
+}
+
+@media screen and (max-width:767px) {
+    #header .site-title {
+        padding: 20px 16px;
+    }
+
+    #navi {
+        overflow-x: scroll;
+    }
+
+    #pickup {
+        flex-direction: column;
+        padding-top: 140px;
+    }
+
+    #pickup article {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #container {
+        flex-direction: column;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    main article {
+        margin-bottom: 80px;
+    }
+
+    #sidebar {
+        width: 100%;
+        padding: 0;
+    }
+
+    footer .content {
+        flex-direction: column;
+    }
+
+    #footer .item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
